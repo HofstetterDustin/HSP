@@ -5,11 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="MainStylesheet" href="mainStylesheet.css">
+    <title>HSP</title>
+    <style>
+
+    </style>
+
 </head>
 
 <body>
-    <h1>Hofstetter Sports Page</h1>
+    <div class="header">
+        <h1>Hofstetter Sports Page</h1>
+    </div>
+    <div id="navbar">
+        <a class="active" href="javascript:void(0)">Home</a>
+        <a href="Professional\mPpage.html">Professional Sports</a>
+        <a href="College\mCpage.html">College Sports</a>
+
+    </div>
+    <div id="sectionOne" class="NFL"></div>
+    <div id="sectionTwo" class="College"></div>
+    <div id="sectionThree"></div>
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
 </body>
 
 </html>
