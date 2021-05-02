@@ -1,0 +1,79 @@
+/*Page Title*/
+
+#titlePg {
+    float: left;
+}
+
+#backBtn {
+    float: right;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#title {
+    text-align: center;
+}
+
+#title-space {
+    padding-top: 40px;
+}
+
+/*Direction Row*/
+
+#directions {
+    text-align: center;
+}
+
+/*Sports Menu*/
+
+#space {
+    min-height: 10px;
+    min-width: 100%;
+    background: #808259 url(nav_bg.jpg) 0 0 repeat-x;
+    float: left;
+}
+
+#navbar {
+    margin: 0;
+    padding: 0;
+    background: #808259 url(nav_bg.jpg) 0 0 repeat-x;
+    float: left;
+    width: 100%;
+    /*overall row width*/
+    border: none;
+    text-align: center;
+}
+
+/*Sports Buttons*/
+
+#navBtn {
+    background-color: white;
+    padding: 10px 22px;
+    width: 100%;
+    display: inline-block;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-color: black;
+    border: 2px solid;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#navBtn:hover {
+    background-color: lightslategrey;
+    color: white;
+}
+
+#navBtn:active {
+    background-color: grey;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
