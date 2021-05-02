@@ -5,44 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="MainStylesheet" href="mainStylesheet.css">
     <title>HSP</title>
-    <style>
-
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="mainStylesheet.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
 </head>
 
 <body>
-    <div class="header">
-        <h1>Hofstetter Sports Page</h1>
+    <div class="container-fluid">
+        <div class="row" id="mainTitle">
+            <h1>Hofstetter Sports Page</h1>
+        </div>
+
+        <div>
+            <h3>Log in page</h3>
+            <p>Want to add a JS section here for login creds.</p>
+        </div>
+        <div>
+            <a href="HomePage/HomeIndex.html">
+                <button>Temp Nav Button To Home Page</button>
+            </a>
+        </div>
+        <div id="sectionThree">
+            <h3>Welcome, please log in.</h3>
+
+        </div>
+        <div class="row" id="pcSelect">
+            <div class="col-6">
+                <p>Temperary buttons for building.</p>
+                <button><a href="Professional/ProIndex.html">Professional Sports</a></button>
+                <button><a href="College\mCpage.html">College Sports</a></button>
+            </div>
+        </div>
     </div>
-    <div id="navbar">
-        <a class="active" href="javascript:void(0)">Home</a>
-        <a href="Professional\mPpage.html">Professional Sports</a>
-        <a href="College\mCpage.html">College Sports</a>
-
     </div>
-    <div id="sectionOne" class="NFL"></div>
-    <div id="sectionTwo" class="College"></div>
-    <div id="sectionThree"></div>
 
-    <script>
-        window.onscroll = function() {
-            myFunction()
-        };
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
-    </script>
-
+    <script src="index.js">    </script>
+    <script src="Professional.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

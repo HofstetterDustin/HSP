@@ -1,0 +1,27 @@
+/* dropdown style */
+
+.dropdownlist-content a:hover {
+    background-color: blue;
+}
+
+.dropdown:hover .dropdownlist-content {
+    display: block;
+}
+
+.dropdown:hover .dropdownbtn {
+    background-color: brown;
+}
+
+/* row style */
+
+.Conf {
+    display: inline;
+}
+
+/* style */
+
+#backBtn {
+    float: right;
+    text-align: right;
+    padding-right: 20px;
+}
